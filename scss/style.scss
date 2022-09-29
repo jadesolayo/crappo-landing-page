@@ -1,0 +1,31 @@
+@forward "reset";
+@forward "mixins";
+@forward "typography";
+@forward "colors";
+section {
+  padding: 2rem 6rem;
+  height: 100vh;
+  background-color: var(--bg-color);
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .header-links{
+      .header-btn-link{
+        margin-left: -1rem;
+      }
+      .header-btn{
+        background-color: var(--btn-color1);
+        color: var(--white);
+        padding: 10px 25px;
+        border-radius: 25px;
+        border: none;
+        font-size: 1rem;
+      }
+      .divider{
+        color: var(--gray);
+        padding-left: 1rem;
+      }
+    }
+  }
+}
