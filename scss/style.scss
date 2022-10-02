@@ -2,41 +2,49 @@
 @forward "mixins";
 @forward "typography";
 @forward "colors";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 main {
   width: min(100%, 1500px);
   margin-inline: auto;
-  section {
-    padding: 2rem 4rem;
+  .landing-page {
     height: 100vh;
     background-color: var(--bg-color);
     header {
+      padding: 1rem 4rem;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
+      @media (max-width: 1000px) {
+        }
+      .logo-wrapper{
+        display: flex;
+        align-items:  center;
+      }
       .header-links {
+        display: flex;
         @media (max-width: 1000px) {
           display: none;
         }
-        .header-btn-link {
-          margin-left: -1rem;
-        }
-        .header-btn {
-          background-color: var(--btn-color1);
-          color: var(--white);
-          padding: 8px 20px;
-          border-radius: 25px;
-          border: none;
-          font-size: 1rem;
-        }
-        .divider {
-          color: var(--gray);
-          padding-left: 1rem;
-        }
       }
       .fa-bars {
-        color: var(--white);
-        @media (min-width: 1000px) {
-          display: none;
+        color: white;
+        padding-left: 1rem;
+        padding-top: .5rem;
+      }
+      .header-links ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        .headerbtn {
+          padding: 8px 20px;
+          border-radius: 20px;
+          background-color: var(--btn-color1);
+          color: var(--white);
+          font-size: 1rem;
+          .divider {
+            color: var(--gray);
+            padding-left: 1rem;
+          }
         }
       }
     }
