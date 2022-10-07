@@ -13,23 +13,27 @@
   </head>
   <body>
     <main>
-      <section class="landing-page">
+      <section id="landing-page">
         <header>
           <div class="logo-wrapper">
-            <img src="./images/Logo.svg" alt="logo" />
+            <img src="./images/Logo.svg" alt="logo" class="logo" />
           </div>
-          <nav class="header-links">
-            <ul>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="login">
-              <a href="#">Login</a>
-
-              <span class="divider">|</span>
-              <a href="#"><button class="headerbtn">Register</button></a>
+          <nav class="header-wrapper">
+            <div class="close-icon" id="close-icon">
+              <img src="mail.png" alt="" />
+            </div>
+            <div class="header-links">
+              <a href="#">Products</a>
+              <a href="#">Features</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+              <div>
+                <a href="#">Login</a>
+                <span class="divider">|</span>
+                <a href="#" class="header-btn-link"
+                  ><button class="header-btn">Register</button>
+                </a>
+              </div>
             </div>
           </nav>
           <i class="fa-solid fa-bars"></i>
