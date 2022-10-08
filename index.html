@@ -18,10 +18,8 @@
           <div class="logo-wrapper">
             <img src="./images/Logo.svg" alt="logo" class="logo" />
           </div>
-          <nav class="header-wrapper">
-            <div class="close-icon" id="close-icon">
-              <img src="mail.png" alt="" />
-            </div>
+          <nav class="header-wrapper" id="nav">
+            <div class="close-icon" id="close-icon"></div>
             <div class="header-links">
               <a href="#">Products</a>
               <a href="#">Features</a>
@@ -36,9 +34,31 @@
               </div>
             </div>
           </nav>
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" onclick="leftToggler()"></i>
         </header>
+        <div class="landing-page-content">
+          <div class="landing-page-text">
+            <div class="tag-cont">
+              <p class="tag-small">70% SAVE</p>
+              <p class="tag-big">for the best black friday deals</p>
+            </div>
+            <h1>Fastest & secure platform to invest in crypto</h1>
+            <p class="copy1">
+              Buy and sell cryptocurrencies, trusted by 10M wallets 
+              with over $30 billion in transactions.
+            </p>
+            <button class="landing-page-btn">
+              Try for FREE
+              <span><img src="./images/Arrow Right.svg" alt="" /></span>
+            </button>
+          </div>
+          <div class="landing-page-img">
+            <img src="./images/Illustration.png" alt="illustration" />
+          </div>
+        </div>
       </section>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
