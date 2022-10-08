@@ -13,13 +13,19 @@
   </head>
   <body>
     <main>
-      <section id="landing-page">
+      <section class="landing-page">
         <header>
           <div class="logo-wrapper">
             <img src="./images/Logo.svg" alt="logo" class="logo" />
           </div>
           <nav class="header-wrapper" id="nav">
-            <div class="close-icon" id="close-icon"></div>
+            <div class="close-icon" id="close-icon">
+              <i
+                class="fa fa-times"
+                onclick="closeToggler()"
+                aria-hidden="true"
+              ></i>
+            </div>
             <div class="header-links">
               <a href="#">Products</a>
               <a href="#">Features</a>
@@ -44,8 +50,8 @@
             </div>
             <h1>Fastest & secure platform to invest in crypto</h1>
             <p class="copy1">
-              Buy and sell cryptocurrencies, trusted by 10M wallets 
-              with over $30 billion in transactions.
+              Buy and sell cryptocurrencies, trusted by 10M wallets with over
+              $30 billion in transactions.
             </p>
             <button class="landing-page-btn">
               Try for FREE
@@ -54,6 +60,49 @@
           </div>
           <div class="landing-page-img">
             <img src="./images/Illustration.png" alt="illustration" />
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="test test-1">
+            <div class="test-1-img">
+              <img src="./images/currency icon.png" alt="currency icon" />
+            </div>
+            <div class="test-text">
+              <h2>$30B</h2>
+              <p>Digital Currency Exchanged</p>
+            </div>
+          </div>
+          <div class="test test-2">
+            <div class="test-2-img">
+              <img src="./images/user icon.png" alt="user icon" />
+            </div>
+            <div class="test-text">
+              <h2>10M+</h2>
+              <p>Trusted Wallets Investor</p>
+            </div>
+          </div>
+          <div class="test test-3">
+            <div class="test-3-img">
+              <img src="./images/world icon.png" alt="world icon" />
+            </div>
+            <div class="test-text">
+              <h2>195</h2>
+              <p>Countries Supported</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="why-section">
+        <div class="why-section-content">
+          <div class="why-section-img">
+            <img src="./images/Illustrations.svg" alt="illustration" />
+          </div>
+          <div class="why-section-copy">
+            <h1>Why you should use CRAPPO</h1>
+            <p>
+              Experience the next generation cryptocurrency platform. No
+              financial borders, extra fees, and fake reviews.
+            </p>
           </div>
         </div>
       </section>

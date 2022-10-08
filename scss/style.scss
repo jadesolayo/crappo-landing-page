@@ -7,14 +7,16 @@ main {
   width: min(100%, 1600px);
   margin-inline: auto;
 
-  section {
-    padding: 2rem 4rem;
+  .landing-page,
+  .why-section {
+    margin-top: -2px;
+    padding: 2rem 5rem;
     min-height: 100vh;
     background-color: var(--bg-color);
     color: var(--white);
     @media (max-width: 1000px) {
-         padding: 2rem 1.5rem; 
-        }
+      padding: 2rem 1.5rem;
+    }
 
     header {
       display: flex;
@@ -38,6 +40,7 @@ main {
           align-items: center;
         }
         .close-icon {
+          color: var(--white);
           display: none;
           @media (max-width: 1000px) {
             display: block;
@@ -88,49 +91,59 @@ main {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 2rem;
+      margin-top: 3rem;
       @media (max-width: 1000px) {
         flex-direction: column;
+        align-items: center;
         justify-content: center;
       }
       .landing-page-text {
-        width: 49%;
+        width: 50%;
         @media (max-width: 1000px) {
           width: 100%;
+          margin-inline: auto;
         }
         .tag-cont {
           display: flex;
           align-items: center;
+          justify-content: space-between;
           background-color: hsl(215, 14%, 34%);
-          padding: 0.3rem 0.7rem 0.3rem 0.3rem;
+          padding: 0.3rem;
           border-radius: 25px;
-          width: 73%;
+          width: 330px;
+
           @media (max-width: 1000px) {
-          width: 100%;
-          font-size: .8rem;
-        }
+            font-size: 0.8rem;
+          }
           .tag-small {
             color: hsl(226, 17%, 67%);
             background-color: var(--white);
             padding: 0.3rem 1rem;
             border-radius: 25px;
+            font-size: 0.85rem;
           }
           .tag-big {
-            margin-left: 3rem;
+            margin: 0 1rem 0 0rem;
+            font-size: 0.85rem;
           }
         }
         h1 {
           font-weight: 700;
           font-size: 3.5rem;
           margin-top: 1.5rem;
+          width: 74%;
           @media (max-width: 1000px) {
             font-size: 2rem;
             margin-top: 2rem;
-          
-        }
+            width: 100%;
+          }
         }
         .copy1 {
           padding-top: 1.5rem;
+          width: 70%;
+          @media (max-width: 1000px) {
+            width: 100%;
+          }
         }
         .landing-page-btn {
           display: flex;
@@ -150,7 +163,37 @@ main {
       .landing-page-img {
         width: 45%;
         @media (max-width: 1000px) {
-          width: 100%;
+          margin-top: 1.5rem;
+          width: 85%;
+          margin-inline: auto;
+        }
+      }
+    }
+    .testimonial {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 6rem;
+      @media (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+      }
+      .test {
+        display: flex;
+        align-items: center;
+        @media (max-width: 1000px) {
+          margin-top: 3rem;
+        }
+        .test-text {
+          margin-left: 1.5rem;
+          h2 {
+            font-size: 2.5rem;
+            @media (max-width: 1000px) {
+              font-size: 2rem;
+            }
+          }
+          p {
+            padding-top: 0.3rem;
+          }
         }
       }
     }
