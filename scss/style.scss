@@ -1,5 +1,5 @@
 @forward "reset";
-@forward "mixins";
+@use "mixins" as u;
 @forward "typography";
 @forward "colors";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
@@ -147,14 +147,7 @@ main {
         }
         .landing-page-btn {
           display: flex;
-          cursor: pointer;
-          align-items: center;
-          margin-top: 1.5rem;
-          padding: 10px 15px 10px 15px;
-          border: none;
-          border-radius: 32px;
-          background-color: var(--btn-color1);
-          color: var(--white);
+          @include u.btn;
           span {
             padding-left: 0.5rem;
           }
@@ -241,6 +234,9 @@ main {
         }
         p{
           padding-top: 1.5rem;
+        }
+        button{
+          @include u.btn;
         }
       }
     }

@@ -1,0 +1,11 @@
+@mixin btn {
+  cursor: pointer;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 10px 15px 10px 15px;
+  border: none;
+  border-radius: 32px;
+  background-color: var(--btn-color1);
+  color: var(--white);
+  font-size: 1rem;
+}
