@@ -15,7 +15,7 @@ main {
     background-color: var(--bg-color);
     color: var(--white);
     @media (max-width: 1000px) {
-      padding: 2rem 1.5rem;
+      padding: 2rem 1rem;
     }
 
     header {
@@ -223,13 +223,14 @@ main {
       .why-section-copy {
         width: 40%;
         @media (max-width: 1000px) {
-          width: 90%;
+          width: 100%;
         }
         h1 {
           font-weight: 700;
           font-size: 2.5rem;
           @media (max-width: 1000px) {
-            font-size: 2rem;
+            margin-top: 3rem;
+            font-size: 1.8rem;
           }
         }
         p{
@@ -238,6 +239,16 @@ main {
         button{
           @include u.btn;
         }
+      }
+    }
+    .copy2{
+      margin-top: 6rem;
+      text-align: center;
+      h2{
+        font-size: 1.5rem;
+      }
+      p{
+        padding-top: 1rem;
       }
     }
   }
