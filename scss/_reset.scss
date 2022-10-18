@@ -10,7 +10,7 @@ html {
   font-size: 100%;
 }
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
 }
 button {
@@ -41,4 +41,12 @@ i:hover {
 .landing-page a {
   color: var(--white);
   padding-left: 2rem;
+}
+::placeholder {
+  font-family: var(--ff2);
+  font-size: 1rem;
+}
+p{
+  line-height: 1.8;
+  font-family: var(--ff2);
 }

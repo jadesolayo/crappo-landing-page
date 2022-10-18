@@ -2,7 +2,7 @@
 @use "mixins" as u;
 @forward "typography";
 @forward "colors";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 main {
   width: min(100%, 1600px);
   margin-inline: auto;
@@ -15,7 +15,7 @@ main {
     background-color: var(--bg-color);
     color: var(--white);
     @media (max-width: 1000px) {
-      padding: 2rem 1rem;
+      padding: 2rem 1.5rem;
     }
 
     header {
@@ -111,20 +111,29 @@ main {
           padding: 0.3rem;
           border-radius: 25px;
           width: 330px;
-
-          @media (max-width: 1000px) {
-            font-size: 0.8rem;
+          @media (max-width: 370px) {
+            width: 240px;
           }
+
           .tag-small {
             color: hsl(226, 17%, 67%);
             background-color: var(--white);
             padding: 0.3rem 1rem;
             border-radius: 25px;
             font-size: 0.85rem;
+            text-align: center;
+            @media (max-width: 370px) {
+              font-size: 0.6rem;
+              padding: 0.3rem 0.5rem;
+            }
           }
           .tag-big {
             margin: 0 1rem 0 0rem;
             font-size: 0.85rem;
+            @media (max-width: 370px) {
+              font-size: 0.75rem;
+              margin-left: 1rem;
+            }
           }
         }
         h1 {
@@ -147,6 +156,9 @@ main {
         }
         .landing-page-btn {
           display: flex;
+          align-items: center;
+          margin-top: 1.5rem;
+
           @include u.btn;
           span {
             padding-left: 0.5rem;
@@ -233,22 +245,178 @@ main {
             font-size: 1.8rem;
           }
         }
-        p{
+        p {
           padding-top: 1.5rem;
         }
-        button{
+        button {
+          margin-top: 1.5rem;
           @include u.btn;
         }
       }
     }
-    .copy2{
+    .copy2 {
       margin-top: 6rem;
       text-align: center;
-      h2{
-        font-size: 1.5rem;
+      padding-bottom: 7rem;
+      @media (max-width: 1000px) {
+        padding-bottom: 10rem;
       }
-      p{
+      h2 {
+        font-size: 1.5rem;
+        @media (max-width: 1000px) {
+          font-size: 1.45rem;
+        }
+      }
+      p {
         padding-top: 1rem;
+      }
+    }
+    .crypto-box {
+      position: absolute;
+      padding: 2.5rem;
+      border-radius: 30px;
+      filter: drop-shadow(0px 20px 200px rgba(57, 23, 119, 0.05));
+      margin-top: -4rem;
+      left: 20%;
+      background-color: var(--white);
+      width: 60%;
+      @media (max-width: 1000px) {
+        left: 15%;
+        width: 70%;
+        margin-top: -7rem;
+      }
+      .hash-rate-value {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 1000px) {
+          flex-direction: column;
+        }
+        .hash-rate {
+          width: 40%;
+          @media (max-width: 1000px) {
+            width: 100%;
+          }
+          input[type="text"] {
+            border: none;
+            outline: none;
+            height: 38px;
+            width: 100%;
+          }
+          ::placeholder {
+            font-size: 1.2rem;
+          }
+
+          .hash-rate-line {
+            margin-top: 0.6rem;
+            border-top: 1px solid var(--gray2);
+          }
+        }
+        .custom-select {
+          @media (max-width: 1000px) {
+            margin-top: 1rem;
+            width: 100%;
+          }
+          width: 30%;
+          position: relative;
+          .select {
+            height: 38px;
+            border: none;
+            outline: none;
+            font-size: 1.25rem;
+            width: 100%;
+            font-family: var(--font-family);
+          }
+          .hash-line {
+            margin-top: 0.6rem;
+            border-top: 1px solid var(--gray2);
+          }
+        }
+        .hash {
+          @include u.btn;
+          @media (max-width: 1000px) {
+            margin-top: 2rem;
+            width: 50%;
+          }
+          a {
+            color: var(--white);
+          }
+        }
+      }
+      .hash-rate-copy {
+        color: var(--black);
+        margin-top: 5rem;
+        h5 {
+          color: var(--btn-color1);
+          font-size: 1.2rem;
+          font-family: var(--ff2);
+          @media (max-width: 1000px) {
+            font-size: 1rem;
+          }
+        }
+        h3 {
+          padding-top: 1.5rem;
+          font-size: 1.9rem;
+          font-weight: 800;
+          @media (max-width: 1000px) {
+            font-size: 1.4rem;
+          }
+          span {
+            color: var(--btn-color1);
+          }
+        }
+        p {
+          padding-top: 1.5rem;
+          color: var(--text-color-gray);
+        }
+      }
+    }
+  }
+  .cryptocurrencies-section {
+    padding: 2rem 5rem;
+    min-height: 90vh;
+    background-color: var(--bg-2);
+    color: var(--bg-color);
+    @media (max-width: 1000px) {
+      padding: 2rem 1rem;
+    }
+    h3 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 20rem;
+      @media (max-width: 1000px) {
+        font-size: 1.5rem;
+        margin-top: 12rem;
+      }
+    }
+    .crypto-cards-cont {
+      display: flex;
+      margin-top: 5rem;
+      justify-content: space-between;
+      margin-inline: auto;
+      .cards {
+        width: 32%;
+        border-radius: 30px;
+        background-color: var(--card-color);
+      }
+      .crypto-card1 {
+        padding: 1rem;
+        color: var(--white);
+        background-color: var(--card-color);
+        img {
+          width: 30%;
+          margin-top: 3rem;
+          margin-inline: auto;
+        }
+        h2{
+          
+          text-align: center;
+          margin-inline: auto;
+          margin-top: 3rem;
+          sup{
+            color: var(--gray2);
+            font-size:1.2rem;
+          }
+        }
       }
     }
   }
