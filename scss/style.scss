@@ -281,8 +281,8 @@ main {
       background-color: var(--white);
       width: 60%;
       @media (max-width: 1000px) {
-        left: 15%;
-        width: 70%;
+        left: 10%;
+        width: 80%;
         margin-top: -7rem;
       }
       .hash-rate-value {
@@ -373,8 +373,7 @@ main {
   }
   .cryptocurrencies-section {
     padding: 2rem 5rem;
-    min-height: 90vh;
-    background-color: var(--bg-2);
+    background-color: hsl(252, 22%, 95%);
     color: var(--bg-color);
     @media (max-width: 1000px) {
       padding: 2rem 1rem;
@@ -385,7 +384,7 @@ main {
       margin-top: 20rem;
       @media (max-width: 1000px) {
         font-size: 1.5rem;
-        margin-top: 12rem;
+        margin-top: 22rem;
       }
     }
     .crypto-cards-cont {
@@ -393,28 +392,54 @@ main {
       margin-top: 5rem;
       justify-content: space-between;
       margin-inline: auto;
+      @media (max-width: 1000px) {
+        flex-direction: column;
+      }
+      
       .cards {
         width: 32%;
         border-radius: 30px;
         background-color: var(--card-color);
+        @media (max-width: 1000px) {
+          width: 100%;
+          margin-top: 2rem;
+        }
       }
       .crypto-card1 {
-        padding: 1rem;
-        color: var(--white);
-        background-color: var(--card-color);
-        img {
+      margin-top: 0;
+    }
+      .crypto-card {
+        padding: 3rem;
+        color: var(--black);
+        background-color: var(--white);
+        .logo {
           width: 30%;
           margin-top: 3rem;
           margin-inline: auto;
         }
-        h2{
-          
+        h2 {
           text-align: center;
           margin-inline: auto;
           margin-top: 3rem;
-          sup{
+          sup {
             color: var(--gray2);
-            font-size:1.2rem;
+            font-size: 1rem;
+          }
+        }
+        p {
+          text-align: center;
+          margin-top: 2rem;
+          margin-inline: auto;
+        }
+        .landing-page-btn {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 2rem;
+          align-items: center;
+          @include u.btn;
+          margin-inline: auto;
+          .arrow {
+            margin-left: 1rem;
           }
         }
       }
