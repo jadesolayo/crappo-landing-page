@@ -8,7 +8,8 @@ main {
   margin-inline: auto;
 
   .landing-page,
-  .why-section {
+  .why-section,
+  .portfolio-section {
     margin-top: -2px;
     padding: 2rem 5rem;
     min-height: 100vh;
@@ -395,7 +396,7 @@ main {
       @media (max-width: 1000px) {
         flex-direction: column;
       }
-      
+
       .cards {
         width: 32%;
         border-radius: 30px;
@@ -406,8 +407,8 @@ main {
         }
       }
       .crypto-card1 {
-      margin-top: 0;
-    }
+        margin-top: 0;
+      }
       .crypto-card {
         padding: 3rem;
         color: var(--black);
@@ -444,5 +445,43 @@ main {
         }
       }
     }
+  }
+  .p-heading {
+    text-align: center;
+    width: 50%;
+    font-size: 2rem;
+    font-family: var(--ff2);
+    margin-inline: auto;
+    margin-top: 2rem;
+  }
+  .invest-cont-wrapper,
+  .stats-cont-wrapper {
+    margin-top: 2.5rem;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+  .invest-cont,
+  .stats-cont {
+    width: 40%;
+    margin-left: 3rem;
+    h3 {
+      font-size: 1.7rem;
+    }
+    p {
+      margin-top: 1.5rem;
+    }
+    button {
+      margin-top: 1rem;
+      @include u.btn;
+    }
+  }
+  .invest-img,
+  .stats-img {
+    margin-top: 2rem;
+    width: 45%;
+  }
+  .table-img{
+    width: 55%;
   }
 }
