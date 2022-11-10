@@ -15,6 +15,7 @@ main {
     min-height: 100vh;
     background-color: var(--bg-color);
     color: var(--white);
+
     @media (max-width: 1000px) {
       padding: 2rem 1.5rem;
     }
@@ -455,20 +456,23 @@ main {
     margin-top: 2rem;
   }
   .invest-cont-wrapper,
-  .stats-cont-wrapper {
-    margin-top: 2.5rem;
+  .stats-cont-wrapper,
+  .profit-cont-wrapper {
+    margin-top: 3rem;
     align-items: center;
     justify-content: space-between;
     display: flex;
   }
   .invest-cont,
+  .profit-cont,
   .stats-cont {
+    margin-top: 2rem;
     width: 40%;
-    margin-left: 3rem;
     h3 {
       font-size: 1.7rem;
     }
     p {
+      width: 80%;
       margin-top: 1.5rem;
     }
     button {
@@ -481,7 +485,17 @@ main {
     margin-top: 2rem;
     width: 45%;
   }
-  .table-img{
+  .table-img {
     width: 55%;
+  }
+  .mining-cont {
+    padding: 1rem;
+    width: 95%;
+    margin-inline: auto;
+    margin-top: 10rem;
+    background: url(/images/Start\ mining\ now.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
   }
 }
