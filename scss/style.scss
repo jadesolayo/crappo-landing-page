@@ -489,7 +489,7 @@ main {
     width: 55%;
   }
   .mining-cont {
-    padding: 1rem;
+    padding: 4rem 2rem;
     width: 95%;
     margin-inline: auto;
     margin-top: 10rem;
@@ -497,5 +497,37 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 16px;
+    .mining-content {
+      border: 1px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .text-box {
+        width: 50%;
+        h3 {
+          font-size: 1.8rem;
+        }
+        p {
+          margin-top: 1.5rem;
+          width: 73%;
+        }
+      }
+      form {
+        width: 40%;
+        input[type="email"] {
+          background-color: transparent;
+          border: none;
+          outline: none;
+          height: 38px;
+          width: 70%;
+        }
+        ::placeholder {
+          font-size: 1.2rem;
+          font-family: var(--ff2);
+          color: var(--white);
+        }
+        
+      }
+    }
   }
 }
