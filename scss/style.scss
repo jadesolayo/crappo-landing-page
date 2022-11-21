@@ -8,12 +8,11 @@ main {
 
   .landing-page,
   .why-section,
-  .portfolio-section,
-  footer {
+  .portfolio-section {
     margin-top: -2px;
-    padding: 2rem 5rem;
     min-height: 100vh;
     background-color: var(--bg-color);
+    padding: 2rem 5rem;
     color: var(--white);
 
     @media (max-width: 1000px) {
@@ -608,27 +607,82 @@ main {
       }
     }
   }
-  footer{
+  footer {
+    padding: 2rem 5rem;
+    color: var(--white);
+    background-color: var(--bg-color);
     padding-top: 6rem;
-    display: flex;
-    justify-content: space-between;
-    .footer-logo{
-      width: 15%;
+    @media (max-width: 1000px) {
+      padding: 2rem 1.5rem;
     }
-    .footer-links-1, .footer-links-2{
+
+    .footer-content-1 {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 1000px) {
+        flex-direction: column;
+      }
+    }
+    .footer-logo {
       width: 15%;
-      h3{
+      @media (max-width: 1000px) {
+        width: 45%;
+      }
+    }
+    .footer-links-1,
+    .footer-links-2 {
+      width: 15%;
+      @media (max-width: 1000px) {
+        margin-top: 2.5rem;
+        width: 100%;
+      }
+      h3 {
         margin-bottom: 2rem;
         font-family: var(--ff2);
+        @media (max-width: 1000px) {
+          margin-bottom: 0.5rem;
+        }
       }
-      a{
+      a {
         color: var(--white);
         display: block;
         line-height: 3;
       }
     }
-    .payments{
-      width: 45%
+    .payments {
+      width: 35%;
+      @media (max-width: 1000px) {
+        margin-top: 3rem;
+        width: 100%;
+      }
+      .payment-options {
+        display: flex;
+        margin-top: 3rem;
+        .opt-2,
+        .opt-3 {
+          padding-left: 3rem;
+        }
+      }
+    }
+    .footer-content-2 {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 1000px) {
+        flex-direction: column;
+        justify-content: center;
+      }
+      .footer-social {
+        display: flex;
+        .social {
+          padding-left: 2rem;
+           @media (max-width: 1000px) {
+            padding-left: 1rem;
+         margin-top: 2rem;
+    }
+        }
+      }
     }
   }
 }
