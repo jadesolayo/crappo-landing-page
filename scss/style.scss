@@ -686,30 +686,4 @@ main {
     }
   }
 }
-  .sc{
-    animation: baby 100s  ease-in-out;
-  }
-.sc:hover{
   
-}
-@keyframes baby{
-  0%{
-  //  transform:translate(-900px, -100px);
-   position:absolute;
-   top: 0;
-   left: 0;
-  }
-   20%{
-   transform:translateY(-100px)
-  }
-  40%{
-   transform:translateY(200px)
-  }
-  60%{
-   transform:translate(-180%,100px)
-  }
-80%{
-   transform:scale(0.3) translate(50%);
-  
-  }
-}
