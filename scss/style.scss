@@ -100,6 +100,7 @@ main {
       }
       .landing-page-text {
         width: 55%;
+
         @media (max-width: 1000px) {
           width: 100%;
           margin-inline: auto;
@@ -123,6 +124,8 @@ main {
             border-radius: 25px;
             font-size: 0.85rem;
             text-align: center;
+            animation: scaleUp 2s ease-in;
+
             @media (max-width: 370px) {
               font-size: 0.6rem;
               padding: 0.3rem 0.5rem;
@@ -136,6 +139,9 @@ main {
               margin-left: 1rem;
             }
           }
+        }
+        .crypto-copy {
+          animation: moveUp 2s ease-in;
         }
         h1 {
           font-weight: 700;
@@ -159,15 +165,18 @@ main {
           display: flex;
           align-items: center;
           margin-top: 1.5rem;
+          animation: scaleUp 2s ease-in;
 
           @include u.btn;
           span {
+            animation: moveRight 3s ease-in;
             padding-left: 0.5rem;
           }
         }
       }
       .landing-page-img {
         width: 40%;
+        animation: scaleUp 2s ease-in;
         @media (max-width: 1000px) {
           margin-top: 1.5rem;
           width: 85%;
@@ -179,6 +188,8 @@ main {
       display: flex;
       justify-content: space-between;
       margin-top: 6rem;
+      animation: moveUp 2s ease-in;
+
       @media (max-width: 1000px) {
         flex-direction: column;
         align-items: center;
@@ -229,12 +240,16 @@ main {
 
       .why-section-img {
         width: 56%;
+        animation: scaleUp 2s ease-in;
+
         @media (max-width: 1000px) {
           width: 85%;
         }
       }
       .why-section-copy {
         width: 40%;
+        animation: moveUp 2s ease-in;
+
         @media (max-width: 1000px) {
           width: 100%;
         }
@@ -259,6 +274,7 @@ main {
       margin-top: 6rem;
       text-align: center;
       padding-bottom: 7rem;
+      animation: moveUp 2s ease-in;
       @media (max-width: 1000px) {
         padding-bottom: 10rem;
       }
@@ -281,6 +297,8 @@ main {
       left: 20%;
       background-color: var(--white);
       width: 60%;
+      animation: scaleUp 3s ease-in;
+
       @media (max-width: 1000px) {
         left: 10%;
         width: 80%;
@@ -384,6 +402,8 @@ main {
       text-align: center;
       font-size: 2rem;
       margin-top: 20rem;
+      animation: scaleUp 3s ease-in;
+
       @media (max-width: 1000px) {
         font-size: 1.5rem;
         margin-top: 22rem;
@@ -458,6 +478,8 @@ main {
     font-family: var(--ff2);
     margin-inline: auto;
     margin-top: 2rem;
+    animation: scaleUp 3s ease-in;
+
     @media (max-width: 1000px) {
       font-size: 1.5rem;
       width: 100%;
@@ -503,6 +525,7 @@ main {
     button {
       margin-top: 1rem;
       @include u.btn;
+      animation: moveLeft 2s ease-in-out;
     }
   }
 
@@ -510,6 +533,8 @@ main {
   .stats-img {
     margin-top: 2rem;
     width: 45%;
+    animation: scaleUp 2s ease-in;
+
     @media (max-width: 1000px) {
       width: 100%;
       order: -1;
@@ -533,6 +558,8 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 16px;
+    animation: scaleUp 3s ease-in;
+
     .mining-content {
       display: flex;
       align-items: center;
@@ -686,4 +713,48 @@ main {
     }
   }
 }
-  
+
+// Start Animation
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes moveUp {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes moveRight {
+  from {
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes moveLeft {
+  from {
+    transform: translateX(70px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+// End Animation
