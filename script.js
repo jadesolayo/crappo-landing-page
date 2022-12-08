@@ -8,44 +8,24 @@ function closeToggler() {
   document.getElementById("nav").style.left = "100%";
 }
 
+//
 
-// const scrollElements = document.querySelectorAll(".js-scroll");
+var myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
+console.log(myStr);
 
-// const elementInView = (el, dividend = 1) => {
-//   const elementTop = el.getBoundingClientRect().top;
+var ourStr = "I come first " + "I come second";
+console.log(ourStr);
 
-//   return (
-//     elementTop <=
-//     (window.innerHeight || document.documentElement.clientHeight) / dividend
-//   );
-// };
+var myStr = "This is the first sentence. ";
+myStr += "This is the second sentence ";
+myStr += "I am the third Sentence";
+console.log(myStr);
 
-// const elementOutofView = (el) => {
-//   const elementTop = el.getBoundingClientRect().top;
+var myName = "Yetunde";
+var myString = "My name is " + myName + ". Welcome to my Blog";
+console.log(myString);
 
-//   return (
-//     elementTop > (window.innerHeight || document.documentElement.clientHeight)
-//   );
-// };
-
-// const displayScrollElement = (element) => {
-//   element.classList.add("scrolled");
-// };
-
-// const hideScrollElement = (element) => {
-//   element.classList.remove("scrolled");
-// };
-
-// const handleScrollAnimation = () => {
-//   scrollElements.forEach((el) => {
-//     if (elementInView(el, 1.25)) {
-//       displayScrollElement(el);
-//     } else if (elementOutofView(el)) {
-//       hideScrollElement(el);
-//     }
-//   });
-// };
-
-// window.addEventListener("scroll", () => {
-//   handleScrollAnimation();
-// });
+var someAdjective = "Beautiful";
+var myString = "Learning how to code is ";
+myString+= someAdjective;
+console.log(myString);
